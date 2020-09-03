@@ -1,0 +1,14 @@
+input[type=number] {
+    width: 80px;
+}
+
+#input {
+    border-radius: 25px;
+    border: 1px solid #808080;
+    margin: 3px;
+}
+
+#btn {
+    border-radius: 25px;
+    border: solid #808080;
+}

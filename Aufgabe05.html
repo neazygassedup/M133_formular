@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aufgabe01</title>
+</head>
+<body>
+
+
+    <form action="/action_page.php">
+        <input type="text" id="input" name="Vname" placeholder="Vorname" required>
+        <input type="text" id="input" name="Nname" placeholder="Nachname" size="22" required><br>
+        <input type="text" id="input" name="Strasse" placeholder="Strasse" size="34" required>
+        <input name="housenumber" id="input" type="number" min="1" pattern="\d{3}" placeholder="Nr. (opt)" /><br>
+        <input name="plzNumber" id="input" type="number" placeholder="PLZ" pattern="\d{4}" required />
+
+        <input list="ort" name="ort" id="input" placeholder="Ort" size="34" required><br />
+        <datalist id="ort">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+
+        <input name="alter" id="input" type="number" min="1" placeholder="Alter (opt)" pattern="\d{3}" />
+        <input type="text" id="input" name="email" placeholder="Email-Adresse" size="34" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br>
+
+        <input type="reset" id="btn" value="Verwerfen">
+        <input type="submit" id="btn" value="Senden">
+
+    </form>
+
+
+</body>
+
+</html>
